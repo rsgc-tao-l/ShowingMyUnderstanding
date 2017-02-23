@@ -8,11 +8,11 @@
  You can find a simple image on the Internet and attempt to reproduce it.
  
  Or, you can create your own.
-
+ 
  ## Remember
  
  Commit your work as you make progress on this page.
-
+ 
  ## Note
  
  The following two statements are required to make the playground run. Please do not remove.
@@ -23,6 +23,16 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
 
+//draw the face
+canvas.drawShapesWithFill = false
+canvas.drawEllipse(centreX: 150, centreY: 150, width: 160, height: 200)
+// his ears
+for x in stride(from: 1, through: 360, by: 1){
+    canvas.borderColor = Color(hue: Float(x), saturation: 100, brightness: 90, alpha: 50)
+    canvas.drawEllipse(centreX: 70, centreY: 200, width: 80-2*(x - (x-1)), height: 80-2*(x - (x-1)))
+    canvas.drawEllipse(centreX: 230, centreY: 200, width: 80-2*(x - (x-1)), height: 80-2*(x - (x-1)))
+    
+}
 // Replace this comment and add your code below...
 
 /*:
