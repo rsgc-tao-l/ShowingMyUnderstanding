@@ -29,6 +29,16 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
 
+
+//setting the rules for the loop
+for x in stride(from: 0, through: 300, by: 50){
+    for y in stride(from: 50, through: 250, by: 100){
+        canvas.drawShapesWithFill = true
+        canvas.drawShapesWithBorders = false
+        canvas.drawRectangle(bottomLeftX: x, bottomLeftY: y, width: 25, height: 10)
+        canvas.drawRectangle(bottomLeftX: x + 25, bottomLeftY: y - 25, width: 25, height: 10)
+}
+}
 // Replace this comment and add your code below...
 
 
