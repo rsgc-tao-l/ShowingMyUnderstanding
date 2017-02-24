@@ -18,8 +18,14 @@ import PlaygroundSupport
 
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
-
-// Replace this command and add your code below...
+//gun
+canvas.drawShapesWithBorders = false
+canvas.drawShapesWithFill = true
+canvas.drawRectangle(bottomLeftX: 0, bottomLeftY: 75, width: 100, height: 20)
+canvas.drawRectangle(bottomLeftX: 4, bottomLeftY: 95, width: 5, height: 10)
+//bullet that varies position depending on the variable generated.
+let x = random(from: 210, toButNotIncluding: 300)
+canvas.drawRectangle(bottomLeftX: x, bottomLeftY: 85, width: 13, height: 10)
 
 /*:
  ## Template code
