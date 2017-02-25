@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='macos' display-mode='rendered' executeOnSourceChanges='false'>
+    <pages>
+        <page name='Introduction'/>
+        <page name='Goals'/>
+        <page name='Sequence - Practice'/>
+        <page name='Sequence - Create an Example'/>
+        <page name='Conditionals - Practice'/>
+        <page name='Conditionals - Create an Example'/>
+        <page name='Iteration - Practice'/>
+        <page name='Iteration - Create an Example'/>
+        <page name='Put it all together'/>
+        <page name='Checklist'/>
+    </pages>
+</playground>
